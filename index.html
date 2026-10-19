@@ -189,6 +189,7 @@ h1::after{height:16px;margin-top:6px}
 .opt .lt{width:32px;height:32px;font-size:.92rem}
 .stack:not(.card)>p.credit,p.credit{margin:-4px 0 0;text-align:center;font-style:italic;font-size:.76rem;line-height:1.5;letter-spacing:.01em;color:#e6b85c;opacity:.95;text-wrap:balance}
 .creditbox{margin-top:-4px}
+.creditbox p.credit:not(.valid){white-space:nowrap;font-size:clamp(.55rem,2.75vw,.76rem)}
 .creditbox p.credit.valid{margin:3px 0 0;font-size:.5rem;line-height:1.3;letter-spacing:.03em;opacity:.75}
 .opt .tx{padding-top:3px}
 .opt .st{padding-top:5px;font-size:.74rem}
@@ -240,7 +241,7 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
   /* The answer key ships scrambled so it does not sit in plain view; decode it once at start. */
   (function(){ var raw=atob(BANK.k), key="Theory1-Quiz"; for(var i=0;i<BANK.items.length;i++){ BANK.items[i].a = (raw.charCodeAt(i)^key.charCodeAt(i%key.length)) - 48 } })();
   var L = {
-    ta:{ credit:"உருவாக்கியவர்: எஸ். தயாளமூர்த்தி · இசைக் கோட்பாடு – 1", valid:"31 டிசம்பர் 2026 வரை செல்லும்", lang:"தமிழ்", title:"தியரி-1 பயிற்சி வினா-விடை", sub:"பிரிவு-அ · 101 வினாக்கள்",
+    ta:{ credit:"உருவாக்கியவர்: எஸ். தயாளமூர்த்தி · இசைக் கோட்பாடு – 1 ·", valid:"31 டிசம்பர் 2026 வரை செல்லும்", lang:"தமிழ்", title:"தியரி-1 பயிற்சி வினா-விடை", sub:"பிரிவு-அ · 101 வினாக்கள்",
       intro:"ஒவ்வொரு வினாவுக்கும் விடையைத் தொட்டால் உடனே சரியா தவறா என்றும் உங்கள் மதிப்பெண்ணும் தெரியும்.",
       units:"எந்தப் பகுதி?", all:"அனைத்தும்", order:"வரிசை", seq:"வரிசைப்படி", shuf:"கலந்து", name:"உங்கள் பெயர் (விருப்பம்)", namePh:"பெயர்",
       start:"தொடங்கு", count:function(n){return n+" வினாக்கள்"}, last:"கடைசி முறை", q:"வினா", of:"/", right:"சரி", wrong:"தவறு", score:"மதிப்பெண்", skipped:"தவிர்த்தவை",
@@ -254,7 +255,7 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
       codeTitle:"வகுப்புக் குறியீடு", codeAsk:"தொடங்க, வகுப்புக் குழுவில் தரப்பட்ட குறியீட்டை உள்ளிடுக.", codePh:"குறியீடு", codeBtn:"உள்ளே செல்", codeBad:"குறியீடு சரியில்லை. மீண்டும் முயலுக.",
       attemptsLeft:function(l,m){return "மீதமுள்ள முயற்சிகள்: "+l+" / "+m}, noAttempts:"இந்தச் சாதனத்தில் முயற்சிகள் முடிந்துவிட்டன.", expiredMsg:"இந்தப் பயிற்சி மூடப்பட்டுவிட்டது. புதிய கோப்பை அனுப்பும்படி கேளுங்கள்.",
       shuffleNote:"ஒவ்வொரு முறையும் விடைகளின் வரிசை மாறும். எழுத்தை அல்ல, விடையைப் படித்துத் தேர்ந்தெடுக்கவும்.", privacy:"இந்தப் பக்கம் உங்கள் மதிப்பெண்ணைப் பதிவு செய்யாது. பகிர்வது உங்கள் விருப்பம்.", letters:["அ","ஆ","இ","ஈ"] },
-    en:{ credit:"Created by S. Dayalamurthy · Music Theory – 1", valid:"Valid until 31 Dec 2026", lang:"English", title:"Theory-1 Practice Quiz", sub:"Part A · 101 questions",
+    en:{ credit:"Created by S. Dayalamurthy · Music Theory – 1 ·", valid:"Valid until 31 Dec 2026", lang:"English", title:"Theory-1 Practice Quiz", sub:"Part A · 101 questions",
       intro:"Tap an answer and you see at once whether it is right, and your running score.",
       units:"Which part?", all:"All", order:"Order", seq:"In order", shuf:"Shuffled", name:"Your name (optional)", namePh:"Name",
       start:"Start", count:function(n){return n+" questions"}, last:"Last time", q:"Question", of:"of", right:"Right", wrong:"Wrong", score:"Score", skipped:"Skipped",
