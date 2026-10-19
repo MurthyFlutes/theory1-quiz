@@ -188,6 +188,8 @@ h1::after{height:16px;margin-top:6px}
 .opt{min-height:50px;padding:8px 12px;gap:11px;border-radius:14px;font-size:.98rem;box-shadow:inset 0 2px 0 rgba(255,255,255,.65),0 4px 0 var(--s-shadow),0 8px 12px -8px rgba(0,0,0,.5)}
 .opt .lt{width:32px;height:32px;font-size:.92rem}
 .stack:not(.card)>p.credit,p.credit{margin:-4px 0 0;text-align:center;font-style:italic;font-size:.76rem;line-height:1.5;letter-spacing:.01em;color:#e6b85c;opacity:.95;text-wrap:balance}
+.creditbox{margin-top:-4px}
+.creditbox p.credit.valid{margin:2px 0 0;font-size:.6rem;line-height:1.3;letter-spacing:.02em;opacity:.8}
 .opt .tx{padding-top:3px}
 .opt .st{padding-top:5px;font-size:.74rem}
 .feedback{margin-top:12px;padding:8px 12px;font-size:.95rem}
@@ -232,13 +234,13 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
   "use strict";
   var FLAGGED = {13:1,25:1,67:1,68:1,90:1};
   /* Usage limits. These are speed bumps, not security: everything runs on the student's own phone. */
-  var CFG = { maxAttempts:0 /* 0 = unlimited; set a number to cap attempts per phone */, expires:"2026-12-31" /* valid until the end of this year */, codeHash:7768524226904196 };
+  var CFG = { maxAttempts:0 /* 0 = unlimited; set a number to cap attempts per phone */, expires:"2026-12-31" /* valid until the end of this year */, form:{ url:"", fName:"", fScore:"", fPart:"" } /* Google Form: leave url empty to hide the Send card */, codeHash:7768524226904196 };
   function h53(str){ var h1=0xdeadbeef,h2=0x41c6ce57; for(var i=0,ch;i<str.length;i++){ ch=str.charCodeAt(i); h1=Math.imul(h1^ch,2654435761); h2=Math.imul(h2^ch,1597334677) }
     h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909); h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909); return 4294967296*(2097151&h2)+(h1>>>0) }
   /* The answer key ships scrambled so it does not sit in plain view; decode it once at start. */
   (function(){ var raw=atob(BANK.k), key="Theory1-Quiz"; for(var i=0;i<BANK.items.length;i++){ BANK.items[i].a = (raw.charCodeAt(i)^key.charCodeAt(i%key.length)) - 48 } })();
   var L = {
-    ta:{ credit:"உருவாக்கியவர்: எஸ். தயாளமூர்த்தி · இசைக் கோட்பாடு – 1 · 31 டிசம்பர் 2026 வரை செல்லும்", lang:"தமிழ்", title:"தியரி-1 பயிற்சி வினா-விடை", sub:"பிரிவு-அ · 101 வினாக்கள்",
+    ta:{ credit:"உருவாக்கியவர்: எஸ். தயாளமூர்த்தி · இசைக் கோட்பாடு – 1", valid:"31 டிசம்பர் 2026 வரை செல்லும்", lang:"தமிழ்", title:"தியரி-1 பயிற்சி வினா-விடை", sub:"பிரிவு-அ · 101 வினாக்கள்",
       intro:"ஒவ்வொரு வினாவுக்கும் விடையைத் தொட்டால் உடனே சரியா தவறா என்றும் உங்கள் மதிப்பெண்ணும் தெரியும்.",
       units:"எந்தப் பகுதி?", all:"அனைத்தும்", order:"வரிசை", seq:"வரிசைப்படி", shuf:"கலந்து", name:"உங்கள் பெயர் (விருப்பம்)", namePh:"பெயர்",
       start:"தொடங்கு", count:function(n){return n+" வினாக்கள்"}, last:"கடைசி முறை", q:"வினா", of:"/", right:"சரி", wrong:"தவறு", score:"மதிப்பெண்", skipped:"தவிர்த்தவை",
@@ -247,10 +249,12 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
       result:"உங்கள் மதிப்பெண்", byUnit:"பகுதி வாரியாக", retry:"தவறியவற்றை மீண்டும் செய்", again:"மீண்டும் தொடங்கு", share:"WhatsApp-இல் பகிர்", copy:"நகலெடு", copied:"நகலெடுக்கப்பட்டது",
       reviewH:"தவறியவை, தவிர்த்தவை", none:"எல்லா வினாக்களுக்கும் சரியான விடை. வாழ்த்துகள்!", home:"முகப்பு", notice:"இது சுயபயிற்சிக்கான தொகுப்பு; பல்கலைக்கழக வினாத்தாள் அல்ல.",
       skippedLbl:"தவிர்த்தது", good:"மிக நன்று", okay:"நல்ல முயற்சி", more:"இன்னும் பயிற்சி தேவை", shareHead:"தியரி-1 பயிற்சி",
+      sendH:"என் மதிப்பெண்ணை ஆசிரியருக்கு அனுப்பு (விருப்பம்)", sendNote:"உங்கள் பெயரும் இந்த மதிப்பெண்ணும் மட்டுமே, நீங்கள் அனுப்பு அழுத்தும்போது மட்டுமே அனுப்பப்படும்.", sendBtn:"அனுப்பு", sendNeed:"முதலில் பெயரை எழுதுங்கள்.", sentOk:"அனுப்பப்பட்டது ✓", sendFail:"அனுப்ப முடியவில்லை. இணைய இணைப்பைப் பார்த்து மீண்டும் முயலுக.", sending:"அனுப்புகிறது…",
+      privacy2:"உங்கள் மதிப்பெண் தானாகப் பதிவாகாது; நீங்கள் அனுப்பு அழுத்தினால் மட்டுமே ஆசிரியருக்குச் செல்லும்.",
       codeTitle:"வகுப்புக் குறியீடு", codeAsk:"தொடங்க, வகுப்புக் குழுவில் தரப்பட்ட குறியீட்டை உள்ளிடுக.", codePh:"குறியீடு", codeBtn:"உள்ளே செல்", codeBad:"குறியீடு சரியில்லை. மீண்டும் முயலுக.",
       attemptsLeft:function(l,m){return "மீதமுள்ள முயற்சிகள்: "+l+" / "+m}, noAttempts:"இந்தச் சாதனத்தில் முயற்சிகள் முடிந்துவிட்டன.", expiredMsg:"இந்தப் பயிற்சி மூடப்பட்டுவிட்டது. புதிய கோப்பை அனுப்பும்படி கேளுங்கள்.",
       shuffleNote:"ஒவ்வொரு முறையும் விடைகளின் வரிசை மாறும். எழுத்தை அல்ல, விடையைப் படித்துத் தேர்ந்தெடுக்கவும்.", privacy:"இந்தப் பக்கம் உங்கள் மதிப்பெண்ணைப் பதிவு செய்யாது. பகிர்வது உங்கள் விருப்பம்.", letters:["அ","ஆ","இ","ஈ"] },
-    en:{ credit:"Created by S. Dayalamurthy · Music Theory – 1 · Valid until 31 Dec 2026", lang:"English", title:"Theory-1 Practice Quiz", sub:"Part A · 101 questions",
+    en:{ credit:"Created by S. Dayalamurthy · Music Theory – 1", valid:"Valid until 31 Dec 2026", lang:"English", title:"Theory-1 Practice Quiz", sub:"Part A · 101 questions",
       intro:"Tap an answer and you see at once whether it is right, and your running score.",
       units:"Which part?", all:"All", order:"Order", seq:"In order", shuf:"Shuffled", name:"Your name (optional)", namePh:"Name",
       start:"Start", count:function(n){return n+" questions"}, last:"Last time", q:"Question", of:"of", right:"Right", wrong:"Wrong", score:"Score", skipped:"Skipped",
@@ -259,12 +263,16 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
       result:"Your score", byUnit:"By part", retry:"Redo the ones I missed", again:"Start again", share:"Share on WhatsApp", copy:"Copy", copied:"Copied",
       reviewH:"Missed and skipped", none:"Every answer correct. Well done!", home:"Home", notice:"Practice material for self-study. Not a university question paper.",
       skippedLbl:"Skipped", good:"Excellent", okay:"Good effort", more:"Needs more practice", shareHead:"Theory-1 practice",
+      sendH:"Send my score to the teacher (optional)", sendNote:"Only your name and this score are sent, and only when you press Send.", sendBtn:"Send", sendNeed:"Please write your name first.", sentOk:"Sent ✓", sendFail:"Could not send. Check your internet and try again.", sending:"Sending…",
+      privacy2:"Your score is not recorded automatically; it goes to the teacher only if you press Send.",
       codeTitle:"Class code", codeAsk:"To start, enter the code given in the class group.", codePh:"Code", codeBtn:"Enter", codeBad:"That code is not right. Please try again.",
       attemptsLeft:function(l,m){return "Attempts left: "+l+" of "+m}, noAttempts:"You have used all attempts on this device.", expiredMsg:"This practice has closed. Ask for a new file.",
       shuffleNote:"The answer order changes every time. Read the answer, not the letter.", privacy:"This page does not record your score. Sharing is your choice.", letters:["a","b","c","d"] }
   };
   var S = { lang:"ta", units:null, order:"seq", name:"", queue:[], idx:0, ans:{}, answered:false, retry:false, runUnits:[] };
   var root = document.getElementById("screen");
+  var FORM_ON = !!(CFG.form && CFG.form.url);
+  if(FORM_ON){ L.ta.privacy=L.ta.privacy2; L.en.privacy=L.en.privacy2 }
 
   function store(k,v){ try{ if(v===undefined){ return localStorage.getItem(k) } localStorage.setItem(k,v) }catch(e){ return null } }
   function t(){ return L[S.lang] }
@@ -302,7 +310,7 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
     root.appendChild(el("div",{class:"stack"},[
       el("div",{class:"row",style:"justify-content:space-between;align-items:center"},[ el("span",{class:"eyebrow",text:T.sub}), langSeg ]),
       el("h1",{text:T.title}),
-      el("p",{class:"credit",text:T.credit}),
+      el("div",{class:"creditbox"},[ el("p",{class:"credit",text:T.credit}), el("p",{class:"credit valid",text:T.valid}) ]),
       el("p",{class:"muted",text:T.intro}),
       el("div",{class:"card stack"},[
         el("div",null,[ el("h2",{text:T.units}), unitChips ]),
@@ -331,7 +339,7 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
     root.appendChild(el("div",{class:"stack"},[
       el("div",{class:"row",style:"justify-content:space-between;align-items:center"},[ el("span",{class:"eyebrow",text:T.sub}), langSeg ]),
       el("h1",{text:T.title}),
-      el("p",{class:"credit",text:T.credit}),
+      el("div",{class:"creditbox"},[ el("p",{class:"credit",text:T.credit}), el("p",{class:"credit valid",text:T.valid}) ]),
       el("div",{class:"card stack"},[ el("div",{class:"field"},[ el("label",{for:"code",class:"small muted",text:T.codeAsk}), inp ]), msg,
         el("button",{type:"button",class:"btn primary block",onclick:submit},[T.codeBtn]) ]),
       el("p",{class:"foot",text:T.notice})
@@ -422,6 +430,25 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
     if(S.idx<S.queue.length-1){ S.idx++; showQuestion() } else showResult();
   }
 
+  /* ---------- optional: send name + score to the teacher's Google Form (opt-in, one press) ---------- */
+  function sendCard(c, n, p, part){
+    var T=t(), sent=false;
+    var nm = el("input",{type:"text",maxlength:"40",autocomplete:"name",placeholder:T.namePh,value:S.name,"aria-label":T.name});
+    var msg = el("p",{class:"small",role:"status"});
+    var btn = el("button",{type:"button",class:"btn primary block"},[T.sendBtn]);
+    btn.addEventListener("click",function(){
+      var who=(nm.value||"").trim(); if(sent) return;
+      if(!who){ msg.className="small t-bad"; msg.textContent=T.sendNeed; nm.focus(); return }
+      S.name=who; store("t1quiz.name",who);
+      var f=CFG.form, body=new URLSearchParams(); body.append(f.fName,who); body.append(f.fScore,c+" / "+n+" ("+p+"%)"); body.append(f.fPart,(S.retry?"[redo] ":"")+part);
+      btn.disabled=true; btn.textContent=T.sending; msg.className="small muted"; msg.textContent="";
+      fetch(f.url,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:body.toString()})
+        .then(function(){ sent=true; btn.textContent=T.sentOk; msg.textContent="" },
+              function(){ btn.disabled=false; btn.textContent=T.sendBtn; msg.className="small t-bad"; msg.textContent=T.sendFail });
+    });
+    return el("div",{class:"card stack",id:"sendcard"},[ el("h2",{text:T.sendH}), el("p",{class:"muted small",text:T.sendNote}), nm, btn, msg ]);
+  }
+
   /* ---------- result screen ---------- */
   function showResult(){
     var T=t(), tl=tallies(), n=S.queue.length; clear(root); window.scrollTo(0,0);
@@ -458,6 +485,7 @@ const BANK = {"units":[{"from":1,"to":30,"ta":"தியரி அலகு 1","
         el("p",{class:"num",style:"font-size:1.2rem;font-weight:600"},[pc+"% · "+verdict]),
         tl.sk? el("p",{class:"muted small"},[T.skipped+": "+tl.sk]) : null,
         actions ]),
+      FORM_ON ? sendCard(tl.r, n, pc, Object.keys(byUnit).map(function(u){return unitName(+u)}).join("; ")) : null,
       el("div",{class:"card"},[ el("h2",{text:T.share}), shareTxt,
         el("div",{class:"row",style:"margin-top:10px"},[ el("a",{class:"btn primary",href:wa,target:"_blank",rel:"noopener",style:"text-decoration:none;display:inline-flex;align-items:center"},[T.share]), copyBtn ]) ]),
       el("div",{class:"card"},[ el("h2",{text:T.byUnit}), rows ]),
