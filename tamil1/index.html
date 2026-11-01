@@ -1,0 +1,527 @@
+<!doctype html>
+<html lang="ta"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light}body{margin:0;font-size:14px}[hidden]{display:none!important}img{max-width:100%}</style>
+<title>தமிழ்-1 பயிற்சி வினா-விடை</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Baloo+Thambi+2:wght@600;700;800&family=Noto+Serif+Tamil:wght@500;700;800&family=Noto+Sans+Tamil:wght@400;600;700&family=Source+Sans+3:wght@400;600;700&display=swap">
+<style>
+/* Look: a maharaja's durbar. Deep maroon hall with a faint mandala, ivory tablets framed in gold, jewel-toned units
+   (ruby, saffron, gold, emerald, peacock, amethyst) and bevelled gold buttons that press down like embossed brass. */
+:root{
+  --bg:#4a0c1d; --on-bg:#fbe9c0; --card:#fff7e4; --ink:#2a1210; --muted:#6a4a3c; --line:#d8b868; --track:#ecdcb4;
+  --gold1:#ffe9a6; --gold2:#f0c24b; --gold3:#c8901a; --gold-edge:#8a5a07; --gold-shadow:#6b4306; --gold-ink:#3a1c00;
+  --s1:#fffaf0; --s2:#efe0bb; --s-edge:#b8913a; --s-shadow:#8a6a22; --s-ink:#2a1210;
+  --accent-soft:#f6e3b6; --focus:#ffd166;
+  --good:#0d6b49; --good-bg:#d8f0e2; --good-edge:#1c9a6b;
+  --bad:#9f1427; --bad-bg:#fbe1e1; --bad-edge:#d23a4a;
+  --warn-bg:#fff0c4; --warn:#6e4b00;
+  --u0:#b4233a; --u1:#d9780f; --u2:#b8860b; --u3:#11805a; --u4:#1666a8; --u5:#7a3fa0;
+  --o1:#b4233a; --o2:#d9780f; --o3:#11805a; --o4:#1666a8;
+  --font-body:"Noto Sans Tamil","Nirmala UI","Latha","Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --font-head:"Baloo Thambi 2","Noto Serif Tamil","Latha","Nirmala UI",Georgia,"Times New Roman",serif;
+  --font-num:"Source Sans 3",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --card:#2a1419; --ink:#f8ecd2; --muted:#c9ad8a; --line:#7a5a2b; --track:#4a2a24;
+    --s1:#4d2b1d; --s2:#331a12; --s-edge:#c8901a; --s-shadow:#1a0b07; --s-ink:#f8ecd2; --accent-soft:#4a2630;
+    --good:#6fe0ae; --good-bg:#103528; --good-edge:#2fb982; --bad:#ff9aa6; --bad-bg:#3d1620; --bad-edge:#e0586a;
+    --warn-bg:#3d2d0c; --warn:#f2c776;
+    --u0:#ff8fa1; --u1:#ffb15a; --u2:#f0cf5a; --u3:#4fdba8; --u4:#6fb7ff; --u5:#c79bff;
+    --o1:#ff8fa1; --o2:#ffb15a; --o3:#4fdba8; --o4:#6fb7ff;
+    color-scheme:dark;
+  }
+}
+:root[data-theme="dark"]{
+  --card:#2a1419; --ink:#f8ecd2; --muted:#c9ad8a; --line:#7a5a2b; --track:#4a2a24;
+  --s1:#4d2b1d; --s2:#331a12; --s-edge:#c8901a; --s-shadow:#1a0b07; --s-ink:#f8ecd2; --accent-soft:#4a2630;
+  --good:#6fe0ae; --good-bg:#103528; --good-edge:#2fb982; --bad:#ff9aa6; --bad-bg:#3d1620; --bad-edge:#e0586a;
+  --warn-bg:#3d2d0c; --warn:#f2c776;
+  --u0:#ff8fa1; --u1:#ffb15a; --u2:#f0cf5a; --u3:#4fdba8; --u4:#6fb7ff; --u5:#c79bff;
+  --o1:#ff8fa1; --o2:#ffb15a; --o3:#4fdba8; --o4:#6fb7ff;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+body{background-color:var(--bg);color:var(--on-bg);font-family:var(--font-body);font-size:16px;line-height:1.55;
+  background-image:radial-gradient(900px 380px at 50% -60px,rgba(255,214,120,.2),transparent 70%),url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='96' height='96' viewBox='0 0 96 96'%3E%3Cg fill='none' stroke='%23f0c24b' stroke-opacity='.16' stroke-width='1'%3E%3Ccircle cx='48' cy='48' r='14'/%3E%3Ccircle cx='48' cy='48' r='26'/%3E%3Cpath d='M48 8 Q62 48 48 88 Q34 48 48 8Z'/%3E%3Cpath d='M8 48 Q48 34 88 48 Q48 62 8 48Z'/%3E%3Cpath d='M20 20 L76 76 M76 20 L20 76'/%3E%3C/g%3E%3C/svg%3E");
+  background-repeat:no-repeat,repeat}
+body::before{content:"";display:block;height:18px;border-bottom:3px solid var(--gold2);
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='28' height='16' viewBox='0 0 28 16'%3E%3Crect width='28' height='16' fill='%232f0712'/%3E%3Cpath d='M14 2 L21 8 L14 14 L7 8 Z' fill='%23f0c24b' stroke='%238a5a07' stroke-width='1'/%3E%3Ccircle cx='14' cy='8' r='2' fill='%234a0c1d'/%3E%3Ccircle cx='0' cy='8' r='2.2' fill='%23f0c24b'/%3E%3Ccircle cx='28' cy='8' r='2.2' fill='%23f0c24b'/%3E%3C/svg%3E") repeat-x}
+.app{max-width:640px;margin:0 auto;padding-inline:max(16px,env(safe-area-inset-left,0px)) max(16px,env(safe-area-inset-right,0px));padding-block:20px 48px;display:flex;flex-direction:column;gap:18px}
+h1{font-family:var(--font-head);font-weight:800;font-size:1.75rem;line-height:1.3;margin:0;text-align:center;color:var(--gold1);text-shadow:0 2px 0 rgba(0,0,0,.5);text-wrap:balance}
+h1::after{content:"";display:block;height:20px;margin:10px auto 0;max-width:240px;
+  background:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='240' height='20' viewBox='0 0 240 20'%3E%3Cg fill='%23f0c24b' stroke='%23a8750c'%3E%3Cpath d='M120 3 L129 10 L120 17 L111 10 Z'/%3E%3C/g%3E%3Cg stroke='%23f0c24b' stroke-width='2' fill='none'%3E%3Cpath d='M10 10 H100'/%3E%3Cpath d='M140 10 H230'/%3E%3C/g%3E%3Cg fill='%23f0c24b'%3E%3Ccircle cx='104' cy='10' r='2.5'/%3E%3Ccircle cx='136' cy='10' r='2.5'/%3E%3Ccircle cx='6' cy='10' r='3'/%3E%3Ccircle cx='234' cy='10' r='3'/%3E%3C/g%3E%3C/svg%3E") center/contain no-repeat}
+h2{font-family:var(--font-head);font-weight:700;font-size:1.1rem;margin:0 0 8px}
+p{margin:0}
+.card{position:relative;color:var(--ink);background:var(--card);border:3px solid var(--gold2);border-radius:22px;padding:18px;
+  box-shadow:0 0 0 2px var(--gold-edge),inset 0 2px 0 rgba(255,255,255,.55),0 16px 28px -14px rgba(0,0,0,.75)}
+.muted{color:var(--muted)}
+.card .muted{color:var(--muted)}
+.small{font-size:.86rem}
+.row{display:flex;gap:8px;flex-wrap:wrap}
+.num{font-family:var(--font-num);font-variant-numeric:tabular-nums}
+.eyebrow{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold2);font-family:var(--font-num);font-weight:700}
+.card .eyebrow{color:var(--muted)}
+button,input{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--focus);outline-offset:3px}
+.card :focus-visible{outline-color:#1666a8}
+[tabindex="-1"]:focus,[tabindex="-1"]:focus-visible{outline:none}
+.stack:not(.card)>p.muted{color:var(--on-bg)}
+
+/* 3D buttons: bevelled brass, they sink when pressed */
+.btn{appearance:none;font-family:var(--font-head);font-weight:700;font-size:1rem;color:var(--s-ink);cursor:pointer;min-height:52px;padding:11px 20px;border-radius:15px;
+  border:2px solid var(--s-edge);background:linear-gradient(180deg,var(--s1),var(--s2));
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.7),inset 0 -3px 0 rgba(0,0,0,.12),0 6px 0 var(--s-shadow),0 12px 16px -8px rgba(0,0,0,.55);
+  transition:transform .08s,box-shadow .08s,filter .15s}
+.btn:hover:not(:disabled){filter:brightness(1.05)}
+.btn:active:not(:disabled){transform:translateY(5px);box-shadow:inset 0 2px 0 rgba(255,255,255,.5),0 1px 0 var(--s-shadow),0 4px 8px -4px rgba(0,0,0,.5)}
+.btn.primary{color:var(--gold-ink);text-shadow:0 1px 0 rgba(255,255,255,.55);border-color:var(--gold-edge);
+  background:linear-gradient(180deg,var(--gold1) 0%,var(--gold2) 46%,var(--gold3) 54%,#e8b53b 100%);
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.75),inset 0 -3px 0 rgba(120,70,0,.25),0 6px 0 var(--gold-shadow),0 12px 18px -8px rgba(0,0,0,.6)}
+.btn.primary:active:not(:disabled){box-shadow:inset 0 2px 0 rgba(255,255,255,.5),0 1px 0 var(--gold-shadow),0 4px 8px -4px rgba(0,0,0,.5)}
+.btn.block{width:100%}
+.btn:disabled{opacity:.5;cursor:not-allowed;filter:grayscale(.5)}
+.seg{display:inline-flex;background:rgba(0,0,0,.38);border:2px solid var(--gold-edge);border-radius:999px;padding:4px;gap:3px;box-shadow:inset 0 3px 6px rgba(0,0,0,.5)}
+.seg button{appearance:none;border:2px solid transparent;background:transparent;color:var(--on-bg);border-radius:999px;padding:7px 18px;min-height:42px;cursor:pointer;font-family:var(--font-head);font-weight:700}
+.seg button[aria-pressed="true"]{color:var(--gold-ink);border-color:var(--gold-edge);text-shadow:0 1px 0 rgba(255,255,255,.5);
+  background:linear-gradient(180deg,var(--gold1),var(--gold2) 50%,var(--gold3));box-shadow:inset 0 2px 0 rgba(255,255,255,.7),0 3px 0 var(--gold-shadow)}
+.card .seg{background:rgba(120,80,20,.12);box-shadow:inset 0 2px 4px rgba(0,0,0,.25)}
+.card .seg button{color:var(--ink)}
+.card .seg button[aria-pressed="true"]{color:var(--gold-ink)}
+.chips{display:flex;flex-wrap:wrap;gap:11px}
+.chip{appearance:none;cursor:pointer;min-height:44px;padding:8px 16px;border-radius:999px;font-size:.93rem;font-weight:700;color:var(--s-ink);
+  border:2px solid var(--uc,var(--gold3));background:linear-gradient(180deg,var(--s1),var(--s2));
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.65),0 4px 0 var(--s-shadow);transition:transform .08s,box-shadow .08s}
+.chip:active{transform:translateY(3px);box-shadow:inset 0 2px 0 rgba(255,255,255,.5),0 1px 0 var(--s-shadow)}
+.chip[aria-pressed="true"]{border-width:3px;background:linear-gradient(180deg,color-mix(in srgb,var(--uc,var(--gold2)) 28%,var(--s1)),color-mix(in srgb,var(--uc,var(--gold2)) 52%,var(--s2)));box-shadow:inset 0 2px 0 rgba(255,255,255,.55),0 4px 0 var(--uc,var(--gold-shadow))}
+.chip[aria-pressed="true"]::before{content:"✓ "}
+.field{display:flex;flex-direction:column;gap:6px}
+.field input{border:2px solid var(--s-edge);background:var(--s1);color:var(--ink);border-radius:12px;padding:10px 14px;min-height:48px;width:100%;box-shadow:inset 0 3px 5px rgba(0,0,0,.18)}
+.field input:focus{border-color:var(--gold3)}
+.stack{display:flex;flex-direction:column;gap:20px}
+
+/* quiz */
+.topbar{position:sticky;top:env(safe-area-inset-top,0px);z-index:5;background:var(--bg);padding-block:9px;display:flex;flex-direction:column;gap:9px;border-bottom:2px solid var(--gold-edge)}
+.topbar .num{color:var(--on-bg);font-weight:700}
+.progress{position:relative;height:15px;border-radius:99px;border:2px solid var(--gold-edge);overflow:hidden;background:linear-gradient(90deg,var(--gold1),var(--gold3) 50%,var(--gold1));box-shadow:inset 0 2px 3px rgba(0,0,0,.35)}
+.progress>div{position:absolute;right:0;top:0;bottom:0;width:100%;background:#2a0710;transition:width .3s}
+.tally{display:flex;flex-wrap:wrap;gap:9px;align-items:center;font-size:.92rem}
+.tally>span{display:inline-flex;gap:6px;align-items:baseline;border-radius:999px;padding:3px 13px;background:var(--card);color:var(--ink);border:2px solid var(--gold3)}
+.tally b{font-family:var(--font-num);font-variant-numeric:tabular-nums}
+.t-good{color:var(--good)} .t-bad{color:var(--bad)}
+.tally .t-good{border-color:var(--good-edge);background:var(--good-bg)}
+.tally .t-bad{border-color:var(--bad-edge);background:var(--bad-bg)}
+.score-big{margin-inline-start:auto;font-family:var(--font-head);font-weight:800;border-color:var(--gold-edge)!important;color:var(--gold-ink)!important;
+  background:linear-gradient(180deg,var(--gold1),var(--gold2) 50%,var(--gold3))!important;box-shadow:inset 0 2px 0 rgba(255,255,255,.7)}
+.card.q{border-radius:70px 70px 22px 22px;padding-top:38px}
+.card.q::before{content:"";position:absolute;top:11px;left:50%;width:18px;height:18px;transform:translateX(-50%) rotate(45deg);
+  background:radial-gradient(circle at 30% 30%,#fff 0,var(--uc,var(--u0)) 60%);border:2px solid var(--gold-edge);box-shadow:0 0 0 3px var(--gold2)}
+.qmeta{display:flex;gap:10px;flex-wrap:wrap;align-items:center;justify-content:center;margin-bottom:12px}
+.tag{font-size:.8rem;font-weight:700;border-radius:999px;padding:3px 13px;border:2px solid var(--uc,var(--gold3));background:color-mix(in srgb,var(--uc,var(--gold3)) 14%,var(--card));color:var(--ink)}
+.qtext{font-family:var(--font-head);font-size:1.2rem;font-weight:700;line-height:1.55;margin:0 0 18px;text-align:center;text-wrap:pretty;outline:none}
+.opts{display:flex;flex-direction:column;gap:13px}
+.opt{--oc:var(--o1);appearance:none;text-align:start;display:flex;gap:13px;align-items:flex-start;width:100%;min-height:60px;padding:12px 14px;border-radius:16px;cursor:pointer;color:var(--s-ink);
+  border:2px solid var(--s-edge);background:linear-gradient(180deg,var(--s1),var(--s2));
+  box-shadow:inset 0 2px 0 rgba(255,255,255,.65),0 5px 0 var(--s-shadow),0 10px 14px -8px rgba(0,0,0,.5);transition:transform .08s,box-shadow .08s,border-color .15s}
+.opt:nth-child(2){--oc:var(--o2)} .opt:nth-child(3){--oc:var(--o3)} .opt:nth-child(4){--oc:var(--o4)}
+.opt .lt{flex:none;width:38px;height:38px;border-radius:50%;display:grid;place-items:center;font-family:var(--font-head);font-weight:800;font-size:1rem;line-height:1;color:#fff;text-shadow:0 1px 1px rgba(0,0,0,.65);
+  border:2px solid var(--gold-edge);background:radial-gradient(circle at 32% 28%,color-mix(in srgb,var(--oc) 25%,#fff) 0,var(--oc) 62%,color-mix(in srgb,var(--oc) 70%,#000) 100%);box-shadow:0 2px 0 rgba(0,0,0,.3),inset 0 1px 2px rgba(255,255,255,.6)}
+.opt .tx{flex:1;min-width:0;overflow-wrap:anywhere;padding-top:6px}
+.opt .st{flex:none;font-size:.8rem;font-weight:800;padding-top:8px}
+.opt:hover:not(:disabled){border-color:var(--oc);transform:translateY(-2px)}
+.opt:active:not(:disabled){transform:translateY(5px);box-shadow:inset 0 2px 0 rgba(255,255,255,.4),0 1px 0 var(--s-shadow)}
+.opt:disabled{cursor:default}
+.opt.right{border-color:var(--good-edge);background:var(--good-bg);box-shadow:inset 0 2px 0 rgba(255,255,255,.5),0 5px 0 var(--good-edge)}
+.opt.right .lt{background:radial-gradient(circle at 32% 28%,#b8f5d6 0,#1c9a6b 62%,#0b5a3d 100%)}
+.opt.right .st{color:var(--good)}
+.opt.wrong{border-color:var(--bad-edge);background:var(--bad-bg);box-shadow:inset 0 2px 0 rgba(255,255,255,.4),0 5px 0 var(--bad-edge);animation:shake .35s}
+.opt.wrong .lt{background:radial-gradient(circle at 32% 28%,#ffc9cf 0,#d23a4a 62%,#7f0f1d 100%)}
+.opt.wrong .st{color:var(--bad)}
+.opt.faded{opacity:.55;box-shadow:none}
+@keyframes shake{20%{transform:translateX(-5px)}40%{transform:translateX(5px)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+.feedback{margin-top:18px;border-radius:14px;padding:12px 16px;font-family:var(--font-head);font-weight:700;font-size:1.02rem;border:2px solid transparent;text-align:center}
+.feedback.ok{background:var(--good-bg);color:var(--good);border-color:var(--good-edge)}
+.feedback.no{background:var(--bad-bg);color:var(--bad);border-color:var(--bad-edge)}
+.note{margin-top:10px;background:var(--warn-bg);color:var(--warn);border:2px solid var(--gold3);border-radius:12px;padding:10px 14px;font-size:.92rem}
+.actions{display:flex;gap:14px;margin-top:20px;flex-wrap:wrap}
+.actions .btn.primary{flex:1;min-width:160px}
+
+/* result */
+.ring{--p:0;width:176px;height:176px;border-radius:50%;background:conic-gradient(var(--good-edge) calc(var(--p)*1%),var(--track) 0);display:grid;place-items:center;margin:6px auto 12px;border:3px solid var(--gold2);box-shadow:0 0 0 2px var(--gold-edge)}
+.ring>div{width:134px;height:134px;border-radius:50%;background:var(--card);border:3px solid var(--gold2);display:grid;place-items:center;text-align:center}
+.big{font-family:var(--font-head);font-variant-numeric:tabular-nums;font-size:1.8rem;font-weight:800;line-height:1.1;outline:none;color:var(--ink)}
+.resultcard{text-align:center}
+.resultcard .actions{justify-content:center}
+.unitrow{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:5px 12px;align-items:center;margin-top:14px;text-align:start}
+.unitrow .bar{grid-column:1 / -1;height:14px;border-radius:99px;background:var(--track);border:2px solid var(--gold3);overflow:hidden}
+.unitrow .bar>div{height:100%;background:var(--uc,var(--gold3))}
+.review{display:flex;flex-direction:column;gap:14px;margin:0;padding:0;list-style:none}
+.review li{border:3px solid var(--gold2);box-shadow:0 0 0 2px var(--gold-edge);border-radius:16px;padding:12px 14px;background:var(--card);color:var(--ink)}
+.review .q{font-weight:700;margin-bottom:6px}
+.review .yours{color:var(--bad)} .review .right{color:var(--good)}
+.stack:not(.card)>div:not(.card)>h2{color:var(--gold1)}
+.foot{font-size:.82rem;color:var(--on-bg);opacity:.85}
+
+@media (prefers-reduced-motion: reduce){.progress>div,.btn,.opt,.chip{transition:none}.opt.wrong{animation:none}}
+
+/* ---- phone fit: compact spacing, two-column unit buttons, Next/Skip pinned to the bottom ---- */
+.app{padding-block:12px 14px;gap:12px}
+body::before{height:12px;border-bottom-width:2px}
+h1{font-size:clamp(1.3rem,6vw,1.7rem)}
+h1::after{height:16px;margin-top:6px}
+.stack{gap:12px}
+.card{padding:14px;border-width:2px;border-radius:18px}
+.btn{min-height:48px;padding:9px 16px;font-size:.98rem}
+.chips{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.chip{min-height:42px;padding:6px 10px;font-size:.85rem;line-height:1.25;text-align:center;display:flex;align-items:center;justify-content:center}
+.chip.all{grid-column:1 / -1}
+.field input{min-height:44px}
+#go{position:sticky;bottom:calc(8px + env(safe-area-inset-bottom,0px));z-index:3}
+.topbar{padding-block:6px;gap:6px}
+.tally{gap:6px;font-size:.85rem}
+.tally>span{padding:2px 10px}
+.progress{height:11px}
+.card.q{padding:30px 14px 12px;border-radius:48px 48px 18px 18px}
+.card.q::before{top:8px;width:15px;height:15px}
+.qmeta{margin-bottom:8px;gap:6px}
+.qtext{font-size:clamp(1rem,4.5vw,1.18rem);line-height:1.45;margin-bottom:12px}
+.opts{gap:9px}
+.opt{min-height:50px;padding:8px 12px;gap:11px;border-radius:14px;font-size:.98rem;box-shadow:inset 0 2px 0 rgba(255,255,255,.65),0 4px 0 var(--s-shadow),0 8px 12px -8px rgba(0,0,0,.5)}
+.opt .lt{width:32px;height:32px;font-size:.92rem}
+.stack:not(.card)>p.credit,p.credit{margin:-4px 0 0;text-align:center;font-style:italic;font-size:.76rem;line-height:1.5;letter-spacing:.01em;color:#e6b85c;opacity:.95;text-wrap:balance}
+.creditbox{margin-top:-4px}
+.creditbox p.credit:not(.valid){white-space:nowrap;font-size:clamp(.55rem,2.75vw,.76rem)}
+.creditbox p.credit.valid{margin:3px 0 0;font-size:.5rem;line-height:1.3;letter-spacing:.03em;opacity:.75}
+.opt .tx{padding-top:3px}
+.opt .st{padding-top:5px;font-size:.74rem}
+.feedback{margin-top:12px;padding:8px 12px;font-size:.95rem}
+.note{margin-top:8px;padding:8px 12px;font-size:.85rem}
+.actions{margin-top:14px;gap:10px}
+.dock{position:sticky;bottom:0;z-index:4;margin-top:0;padding:8px 0 calc(8px + env(safe-area-inset-bottom,0px));background:linear-gradient(to bottom,transparent,var(--bg) 30%)}
+.dock .btn.primary{flex:1;min-width:0}
+.ring{width:140px;height:140px;margin:2px auto 8px}
+.ring>div{width:106px;height:106px}
+.big{font-size:1.5rem}
+.unitrow{margin-top:10px}
+.review{gap:10px}
+.review li{padding:10px 12px}
+@media (max-height:700px){
+  .app{padding-block:8px 10px;gap:8px}
+  .qtext{font-size:1rem;margin-bottom:8px}
+  .card.q{padding:26px 12px 10px}
+  .opt{min-height:46px;padding:6px 10px}
+  .opts{gap:7px}
+  .feedback{margin-top:8px;padding:6px 10px;font-size:.9rem}
+  .btn{min-height:44px}
+}
+@media (max-width:360px){
+  .app{padding-inline:max(12px,env(safe-area-inset-left,0px)) max(12px,env(safe-area-inset-right,0px))}
+  .opt{padding:7px 9px;gap:9px}
+  .opt .st{display:none}
+  .tally>span{padding:2px 8px}
+}
+</style>
+
+
+</head><body>
+<main class="app" id="app">
+  <div id="screen"></div>
+</main>
+
+<script>
+/* The 101 Part A questions (Tamil and English) and their answers, from the Theory-1 question bank. */
+const BANK = {"units":[{"from":1,"to":14,"ta":"அலகு 1 · செய்யுள்","en":"அலகு 1 · செய்யுள்"},{"from":15,"to":28,"ta":"அலகு 2 · இக்காலக் கவிதைகள்","en":"அலகு 2 · இக்காலக் கவிதைகள்"},{"from":29,"to":42,"ta":"அலகு 3 · உரைநடை","en":"அலகு 3 · உரைநடை"}],"k":"ZVpVXENJAx5gRVtLZ1hUXUJKAB9hRlhIZFtUXUJIAh9hRFtJZFlXXEJI","items":[{"n":1,"u":0,"ta":{"q":"வள்ளலாரின் இயற்பெயர்","o":["சுப்பிரமணியன்","இராமலிங்கம்","முத்தையா","தேசிகவிநாயகம்"]},"en":{"q":"வள்ளலாரின் இயற்பெயர்","o":["சுப்பிரமணியன்","இராமலிங்கம்","முத்தையா","தேசிகவிநாயகம்"]}},{"n":2,"u":0,"ta":{"q":"வள்ளலார் பாடல்களின் தொகுப்பு","o":["திருவாசகம்","தேவாரம்","திருவருட்பா","திருமந்திரம்"]},"en":{"q":"வள்ளலார் பாடல்களின் தொகுப்பு","o":["திருவாசகம்","தேவாரம்","திருவருட்பா","திருமந்திரம்"]}},{"n":3,"u":0,"ta":{"q":"திருவருட்பா எத்தனை திருமுறைகளாகப் பகுக்கப்பட்டுள்ளது?","o":["ஆறு","ஏழு","பன்னிரண்டு","ஒன்பது"]},"en":{"q":"திருவருட்பா எத்தனை திருமுறைகளாகப் பகுக்கப்பட்டுள்ளது?","o":["ஆறு","ஏழு","பன்னிரண்டு","ஒன்பது"]}},{"n":4,"u":0,"ta":{"q":"வள்ளலார் வடலூரில் நிறுவியது","o":["திருக்குறள் மன்றம்","தமிழ்ச் சங்கம்","கல்விக் கூடம்","சத்திய தருமச்சாலை"]},"en":{"q":"வள்ளலார் வடலூரில் நிறுவியது","o":["திருக்குறள் மன்றம்","தமிழ்ச் சங்கம்","கல்விக் கூடம்","சத்திய தருமச்சாலை"]}},{"n":5,"u":0,"ta":{"q":"“வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன்” என்பது வள்ளலாரின் எந்தக் குணத்தைக் காட்டுகிறது?","o":["வீரம்","ஜீவகாருண்யம்","அச்சம்","கோபம்"]},"en":{"q":"“வாடிய பயிரைக் கண்டபோதெல்லாம் வாடினேன்” என்பது வள்ளலாரின் எந்தக் குணத்தைக் காட்டுகிறது?","o":["வீரம்","ஜீவகாருண்யம்","அச்சம்","கோபம்"]}},{"n":6,"u":0,"ta":{"q":"பாரதியார் பிறந்த ஊர்","o":["எட்டயபுரம்","மருதூர்","தேரூர்","மோகனூர்"]},"en":{"q":"பாரதியார் பிறந்த ஊர்","o":["எட்டயபுரம்","மருதூர்","தேரூர்","மோகனூர்"]}},{"n":7,"u":0,"ta":{"q":"பாரதியாருக்கு “பாரதி” பட்டம் வழங்கப்பட்டபோது அவர் வயது","o":["5","8","11","20"]},"en":{"q":"பாரதியாருக்கு “பாரதி” பட்டம் வழங்கப்பட்டபோது அவர் வயது","o":["5","8","11","20"]}},{"n":8,"u":0,"ta":{"q":"பாரதியாரின் முப்பெரும் பாடல்களில் அடங்காதது","o":["கண்ணன் பாட்டு","குயில் பாட்டு","பாஞ்சாலி சபதம்","மலரும் மாலையும்"]},"en":{"q":"பாரதியாரின் முப்பெரும் பாடல்களில் அடங்காதது","o":["கண்ணன் பாட்டு","குயில் பாட்டு","பாஞ்சாலி சபதம்","மலரும் மாலையும்"]}},{"n":9,"u":0,"ta":{"q":"கண்ணன் பாட்டில் மொத்தம் உள்ள பாடல்கள்","o":["12","23","30","108"]},"en":{"q":"கண்ணன் பாட்டில் மொத்தம் உள்ள பாடல்கள்","o":["12","23","30","108"]}},{"n":10,"u":0,"ta":{"q":"“எங்கிருந்தோ வந்தான்” பாடலில் கண்ணன் எந்த வடிவில் வருகிறான்?","o":["சேவகனாக","அரசனாக","குருவாக","காதலனாக"]},"en":{"q":"“எங்கிருந்தோ வந்தான்” பாடலில் கண்ணன் எந்த வடிவில் வருகிறான்?","o":["சேவகனாக","அரசனாக","குருவாக","காதலனாக"]}},{"n":11,"u":0,"ta":{"q":"“பாட்டுக்கொரு புலவன் பாரதி அடா!” என்று பாடியவர்","o":["பாரதிதாசன்","நாமக்கல் கவிஞர்","கவிமணி","கண்ணதாசன்"]},"en":{"q":"“பாட்டுக்கொரு புலவன் பாரதி அடா!” என்று பாடியவர்","o":["பாரதிதாசன்","நாமக்கல் கவிஞர்","கவிமணி","கண்ணதாசன்"]}},{"n":12,"u":0,"ta":{"q":"கவிமணி தேசிக விநாயகம் பிள்ளையின் நூல்","o":["கண்ணீர்ப்பூக்கள்","மலரும் மாலையும்","தமிழன் இதயம்","ஊர்வலம்"]},"en":{"q":"கவிமணி தேசிக விநாயகம் பிள்ளையின் நூல்","o":["கண்ணீர்ப்பூக்கள்","மலரும் மாலையும்","தமிழன் இதயம்","ஊர்வலம்"]}},{"n":13,"u":0,"ta":{"q":"கவிமணிக்கு “கவிமணி” பட்டம் வழங்கப்பட்ட ஆண்டு","o":["1876","1917","1938","1940"]},"en":{"q":"கவிமணிக்கு “கவிமணி” பட்டம் வழங்கப்பட்ட ஆண்டு","o":["1876","1917","1938","1940"]}},{"n":14,"u":0,"ta":{"q":"“கோவில் முழுதுங் கண்டேன்” பாடலின்படி இறைவன் இருக்கும் இடம்","o":["உள்ளத்தில்","கோபுரத்தில்","தெப்பக்குளத்தில்","தேர்வீதியில்"]},"en":{"q":"“கோவில் முழுதுங் கண்டேன்” பாடலின்படி இறைவன் இருக்கும் இடம்","o":["உள்ளத்தில்","கோபுரத்தில்","தெப்பக்குளத்தில்","தேர்வீதியில்"]}},{"n":15,"u":1,"ta":{"q":"நாமக்கல் கவிஞரின் இயற்பெயர்","o":["முகமது மேத்தா","வெ. இராமலிங்கம் பிள்ளை","ந. செகதீசன்","முத்தையா"]},"en":{"q":"நாமக்கல் கவிஞரின் இயற்பெயர்","o":["முகமது மேத்தா","வெ. இராமலிங்கம் பிள்ளை","ந. செகதீசன்","முத்தையா"]}},{"n":16,"u":1,"ta":{"q":"“கத்தியின்றி ரத்தமின்றி யுத்தமொன்று வருகுது” என்று பாடியவர்","o":["பாரதியார்","கவிமணி","நாமக்கல் கவிஞர்","மு. மேத்தா"]},"en":{"q":"“கத்தியின்றி ரத்தமின்றி யுத்தமொன்று வருகுது” என்று பாடியவர்","o":["பாரதியார்","கவிமணி","நாமக்கல் கவிஞர்","மு. மேத்தா"]}},{"n":17,"u":1,"ta":{"q":"நாமக்கல் கவிஞர் சென்னை மாநிலத்தின் முதல்","o":["அரசவைக் கவிஞர்","முதலமைச்சர்","ஆளுநர்","பல்கலைக் கழகத் துணைவேந்தர்"]},"en":{"q":"நாமக்கல் கவிஞர் சென்னை மாநிலத்தின் முதல்","o":["அரசவைக் கவிஞர்","முதலமைச்சர்","ஆளுநர்","பல்கலைக் கழகத் துணைவேந்தர்"]}},{"n":18,"u":1,"ta":{"q":"“கடவுள்” கவிதையின் கருத்து","o":["கடவுள் கோயிலில் மட்டும் இருக்கிறார்","கடவுள் இல்லை","ஒரு மதமே உயர்ந்தது","எல்லா மதங்களும் ஒரே கடவுளைப் போற்றுகின்றன"]},"en":{"q":"“கடவுள்” கவிதையின் கருத்து","o":["கடவுள் கோயிலில் மட்டும் இருக்கிறார்","கடவுள் இல்லை","ஒரு மதமே உயர்ந்தது","எல்லா மதங்களும் ஒரே கடவுளைப் போற்றுகின்றன"]}},{"n":19,"u":1,"ta":{"q":"“சூரியன் வருவது யாராலே?” கவிதை அமைந்துள்ள முறை","o":["வருணனை","வினாக்களால்","உரையாடல்","கதை"]},"en":{"q":"“சூரியன் வருவது யாராலே?” கவிதை அமைந்துள்ள முறை","o":["வருணனை","வினாக்களால்","உரையாடல்","கதை"]}},{"n":20,"u":1,"ta":{"q":"மு. மேத்தாவின் முதன்மைக் கவிதைத் தொகுப்பு","o":["சூரியப் பிறைகள்","ஊர்வலம்","கண்ணீர்ப்பூக்கள்","சங்கொலி"]},"en":{"q":"மு. மேத்தாவின் முதன்மைக் கவிதைத் தொகுப்பு","o":["சூரியப் பிறைகள்","ஊர்வலம்","கண்ணீர்ப்பூக்கள்","சங்கொலி"]}},{"n":21,"u":1,"ta":{"q":"மு. மேத்தா சார்ந்த புதுக்கவிதை இயக்கம்","o":["வானம்பாடி","மணிக்கொடி","எழுத்து","கசடதபற"]},"en":{"q":"மு. மேத்தா சார்ந்த புதுக்கவிதை இயக்கம்","o":["வானம்பாடி","மணிக்கொடி","எழுத்து","கசடதபற"]}},{"n":22,"u":1,"ta":{"q":"“கண்ணீர்ப்பூக்கள்” வெளியான ஆண்டு","o":["1944","1954","1964","1974"]},"en":{"q":"“கண்ணீர்ப்பூக்கள்” வெளியான ஆண்டு","o":["1944","1954","1964","1974"]}},{"n":23,"u":1,"ta":{"q":"“என் முதற் காதல்” கவிதையில் காதல் எதற்கு ஒப்பிடப்படுகிறது?","o":["மலருக்கு","முகவரி தவறான கடிதத்திற்கு","நிலவுக்கு","கடலுக்கு"]},"en":{"q":"“என் முதற் காதல்” கவிதையில் காதல் எதற்கு ஒப்பிடப்படுகிறது?","o":["மலருக்கு","முகவரி தவறான கடிதத்திற்கு","நிலவுக்கு","கடலுக்கு"]}},{"n":24,"u":1,"ta":{"q":"“அரளிப்பூ அழுகிறது” கவிதையில் அரளிப்பூ குறிப்பது","o":["கடவுளை","காதலனை","புறக்கணிக்கப்படும் ஏழைப் பெண்ணை","மழையை"]},"en":{"q":"“அரளிப்பூ அழுகிறது” கவிதையில் அரளிப்பூ குறிப்பது","o":["கடவுளை","காதலனை","புறக்கணிக்கப்படும் ஏழைப் பெண்ணை","மழையை"]}},{"n":25,"u":1,"ta":{"q":"ஈரோடு தமிழன்பனின் இயற்பெயர்","o":["ந. செகதீசன்","சுப்பையா","முத்தையா","இராமையா"]},"en":{"q":"ஈரோடு தமிழன்பனின் இயற்பெயர்","o":["ந. செகதீசன்","சுப்பையா","முத்தையா","இராமையா"]}},{"n":26,"u":1,"ta":{"q":"தமிழில் ஹைக்கூவை எவ்வாறு அழைப்பர்?","o":["வெண்பா","தாழிசை","விருத்தம்","குறும்பா"]},"en":{"q":"தமிழில் ஹைக்கூவை எவ்வாறு அழைப்பர்?","o":["வெண்பா","தாழிசை","விருத்தம்","குறும்பா"]}},{"n":27,"u":1,"ta":{"q":"ஹைக்கூ கவிதை எத்தனை வரிகளைக் கொண்டது?","o":["இரண்டு","மூன்று","நான்கு","எட்டு"]},"en":{"q":"ஹைக்கூ கவிதை எத்தனை வரிகளைக் கொண்டது?","o":["இரண்டு","மூன்று","நான்கு","எட்டு"]}},{"n":28,"u":1,"ta":{"q":"“நாங்கள் அகதிகள்” என்ற மொழிபெயர்ப்புக் கவிதையின் மூல ஆசிரியர்","o":["கலீல் கிப்ரான்","டி. எஸ். எலியட்","பெஞ்சமின் செஃபனையா","ஷேக்ஸ்பியர்"]},"en":{"q":"“நாங்கள் அகதிகள்” என்ற மொழிபெயர்ப்புக் கவிதையின் மூல ஆசிரியர்","o":["கலீல் கிப்ரான்","டி. எஸ். எலியட்","பெஞ்சமின் செஃபனையா","ஷேக்ஸ்பியர்"]}},{"n":29,"u":2,"ta":{"q":"கண்ணதாசனின் இயற்பெயர்","o":["முத்தையா","இராமலிங்கம்","சுப்பிரமணியன்","முகமது"]},"en":{"q":"கண்ணதாசனின் இயற்பெயர்","o":["முத்தையா","இராமலிங்கம்","சுப்பிரமணியன்","முகமது"]}},{"n":30,"u":2,"ta":{"q":"“தாய்: ஒரு விளக்கம்” இடம்பெற்றுள்ள நூல்","o":["இயேசு காவியம்","அர்த்தமுள்ள இந்துமதம்","சேரமான் காதலி","மலரும் மாலையும்"]},"en":{"q":"“தாய்: ஒரு விளக்கம்” இடம்பெற்றுள்ள நூல்","o":["இயேசு காவியம்","அர்த்தமுள்ள இந்துமதம்","சேரமான் காதலி","மலரும் மாலையும்"]}},{"n":31,"u":2,"ta":{"q":"கண்ணதாசன் பிறந்த ஊர்","o":["எட்டயபுரம்","மோகனூர்","பெரியகுளம்","சிறுகூடல்பட்டி"]},"en":{"q":"கண்ணதாசன் பிறந்த ஊர்","o":["எட்டயபுரம்","மோகனூர்","பெரியகுளம்","சிறுகூடல்பட்டி"]}},{"n":32,"u":2,"ta":{"q":"“தாயிற் சிறந்த கோயிலும் இல்லை” என்ற நம்பிக்கைக்கு கண்ணதாசன் கூறும் விதிவிலக்கு","o":["எல்லாத் தாயும் தெய்வம்","தாயை வணங்கத் தேவையில்லை","குணம் கெட்ட தாயை வணங்க வேண்டியதில்லை","தந்தையே உயர்ந்தவர்"]},"en":{"q":"“தாயிற் சிறந்த கோயிலும் இல்லை” என்ற நம்பிக்கைக்கு கண்ணதாசன் கூறும் விதிவிலக்கு","o":["எல்லாத் தாயும் தெய்வம்","தாயை வணங்கத் தேவையில்லை","குணம் கெட்ட தாயை வணங்க வேண்டியதில்லை","தந்தையே உயர்ந்தவர்"]}},{"n":33,"u":2,"ta":{"q":"கண்ணதாசன் ஒவ்வொரு மலருக்கும் மணம் உண்டு என்று கூறி, மணமற்ற மலராகக் காட்டுவது","o":["பீநாறிச் சங்கு","தாமரை","மல்லிகை","ரோஜா"]},"en":{"q":"கண்ணதாசன் ஒவ்வொரு மலருக்கும் மணம் உண்டு என்று கூறி, மணமற்ற மலராகக் காட்டுவது","o":["பீநாறிச் சங்கு","தாமரை","மல்லிகை","ரோஜா"]}},{"n":34,"u":2,"ta":{"q":"“செஞ்ஞாயிற்றுச் செலவும்…” என்ற வானியல் குறிப்பு இடம்பெறும் நூல்","o":["திருக்குறள்","புறநானூறு","தொல்காப்பியம்","நன்னூல்"]},"en":{"q":"“செஞ்ஞாயிற்றுச் செலவும்…” என்ற வானியல் குறிப்பு இடம்பெறும் நூல்","o":["திருக்குறள்","புறநானூறு","தொல்காப்பியம்","நன்னூல்"]}},{"n":35,"u":2,"ta":{"q":"“நெடுங்கடலும் தன்நீர்மை குன்றும்…” குறள் கூறும் அறிவியல் கருத்து","o":["ஈர்ப்பு விசை","ஒளி","நீர்ச் சுழற்சி","உலோகவியல்"]},"en":{"q":"“நெடுங்கடலும் தன்நீர்மை குன்றும்…” குறள் கூறும் அறிவியல் கருத்து","o":["ஈர்ப்பு விசை","ஒளி","நீர்ச் சுழற்சி","உலோகவியல்"]}},{"n":36,"u":2,"ta":{"q":"“ஒன்றறிவதுவே உற்றறிவதுவே” என்பது எதன் அடிப்படையிலான பாகுபாடு?","o":["நிலங்கள்","நூல்கள்","நிறங்கள்","உயிர்களின் அறிவு"]},"en":{"q":"“ஒன்றறிவதுவே உற்றறிவதுவே” என்பது எதன் அடிப்படையிலான பாகுபாடு?","o":["நிலங்கள்","நூல்கள்","நிறங்கள்","உயிர்களின் அறிவு"]}},{"n":37,"u":2,"ta":{"q":"“கற்க கசடறக் கற்பவை கற்றபின் நிற்க அதற்குத் தக” என்ற குறளின் எண்","o":["391","396","400","34"]},"en":{"q":"“கற்க கசடறக் கற்பவை கற்றபின் நிற்க அதற்குத் தக” என்ற குறளின் எண்","o":["391","396","400","34"]}},{"n":38,"u":2,"ta":{"q":"“தொட்டனைத் தூறும் மணற்கேணி” என்பது எதை உணர்த்துகிறது?","o":["செல்வம் தரும் மகிழ்ச்சியை","கற்க கற்க அறிவு ஊறுவதை","நட்பின் பெருமையை","மழையின் சிறப்பை"]},"en":{"q":"“தொட்டனைத் தூறும் மணற்கேணி” என்பது எதை உணர்த்துகிறது?","o":["செல்வம் தரும் மகிழ்ச்சியை","கற்க கற்க அறிவு ஊறுவதை","நட்பின் பெருமையை","மழையின் சிறப்பை"]}},{"n":39,"u":2,"ta":{"q":"“மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன்” எந்தத் துறையோடு தொடர்புடையது?","o":["வானியல்","வேளாண்மை","உளவியல் (மன நலம்)","கணிதம்"]},"en":{"q":"“மனத்துக்கண் மாசிலன் ஆதல் அனைத்தறன்” எந்தத் துறையோடு தொடர்புடையது?","o":["வானியல்","வேளாண்மை","உளவியல் (மன நலம்)","கணிதம்"]}},{"n":40,"u":2,"ta":{"q":"“ஏரினும் நன்றால் எருவிடுதல்” குறள் குறிப்பிடும் துறை","o":["மருத்துவம்","வானியல்","கல்வி","வேளாண்மை"]},"en":{"q":"“ஏரினும் நன்றால் எருவிடுதல்” குறள் குறிப்பிடும் துறை","o":["மருத்துவம்","வானியல்","கல்வி","வேளாண்மை"]}},{"n":41,"u":2,"ta":{"q":"“அற்றால் அளவறிந்து உண்க” குறள் கூறுவது","o":["அளவறிந்து உண்ணுதல்","மிகுதியாக உண்ணுதல்","விரதம் இருத்தல்","உணவை விற்றல்"]},"en":{"q":"“அற்றால் அளவறிந்து உண்க” குறள் கூறுவது","o":["அளவறிந்து உண்ணுதல்","மிகுதியாக உண்ணுதல்","விரதம் இருத்தல்","உணவை விற்றல்"]}},{"n":42,"u":2,"ta":{"q":"சிவந்த நிறமுடைய கோளைப் பழந்தமிழர் இவ்வாறு அழைத்தனர்","o":["வெள்ளி","செவ்வாய்","புதன்","சனி"]},"en":{"q":"சிவந்த நிறமுடைய கோளைப் பழந்தமிழர் இவ்வாறு அழைத்தனர்","o":["வெள்ளி","செவ்வாய்","புதன்","சனி"]}}]};
+</script>
+<script>
+(function(){
+  "use strict";
+  var FLAGGED = {};
+  /* Usage limits. These are speed bumps, not security: everything runs on the student's own phone. */
+  var CFG = { maxAttempts:0 /* 0 = unlimited; set a number to cap attempts per phone */, expires:"2026-12-31" /* valid until the end of this year */, form:{ url:"", fName:"", fScore:"", fPart:"" } /* Google Form: leave url empty to hide the Send card */, codeHash:7768524226904196 };
+  function h53(str){ var h1=0xdeadbeef,h2=0x41c6ce57; for(var i=0,ch;i<str.length;i++){ ch=str.charCodeAt(i); h1=Math.imul(h1^ch,2654435761); h2=Math.imul(h2^ch,1597334677) }
+    h1=Math.imul(h1^(h1>>>16),2246822507)^Math.imul(h2^(h2>>>13),3266489909); h2=Math.imul(h2^(h2>>>16),2246822507)^Math.imul(h1^(h1>>>13),3266489909); return 4294967296*(2097151&h2)+(h1>>>0) }
+  /* The answer key ships scrambled so it does not sit in plain view; decode it once at start. */
+  (function(){ var raw=atob(BANK.k), key="Theory1-Quiz"; for(var i=0;i<BANK.items.length;i++){ BANK.items[i].a = (raw.charCodeAt(i)^key.charCodeAt(i%key.length)) - 48 } })();
+  var L = {
+    ta:{ credit:"உருவாக்கியவர்: எஸ். தயாளமூர்த்தி · தமிழ் – I ·", valid:"31 டிசம்பர் 2026 வரை செல்லும்", lang:"தமிழ்", title:"தமிழ்-1 பயிற்சி வினா-விடை", sub:"அலகு 1–3 · 42 வினாக்கள்",
+      intro:"ஒவ்வொரு வினாவுக்கும் விடையைத் தொட்டால் உடனே சரியா தவறா என்றும் உங்கள் மதிப்பெண்ணும் தெரியும்.",
+      units:"எந்தப் பகுதி?", all:"அனைத்தும்", order:"வரிசை", seq:"வரிசைப்படி", shuf:"கலந்து", name:"உங்கள் பெயர் (விருப்பம்)", namePh:"பெயர்",
+      start:"தொடங்கு", count:function(n){return n+" வினாக்கள்"}, last:"கடைசி முறை", q:"வினா", of:"/", right:"சரி", wrong:"தவறு", score:"மதிப்பெண்", skipped:"தவிர்த்தவை",
+      correct:"சரி! 1 மதிப்பெண்.", incorrect:"தவறு. சரியான விடை:", rightTag:"சரியான விடை", yoursTag:"உங்கள் தேர்வு", skip:"தவிர்", next:"அடுத்தது →", finish:"முடிவைப் பார்",
+      flagged:"இந்த வினாவின் விடை பாடநூல்களில் வேறுபடலாம் — வகுப்புக் குறிப்புகளுடன் ஒப்பிடுக.",
+      result:"உங்கள் மதிப்பெண்", byUnit:"பகுதி வாரியாக", retry:"தவறியவற்றை மீண்டும் செய்", again:"மீண்டும் தொடங்கு", share:"WhatsApp-இல் பகிர்", copy:"நகலெடு", copied:"நகலெடுக்கப்பட்டது",
+      reviewH:"தவறியவை, தவிர்த்தவை", none:"எல்லா வினாக்களுக்கும் சரியான விடை. வாழ்த்துகள்!", home:"முகப்பு", notice:"இது சுயபயிற்சிக்கான தொகுப்பு; பல்கலைக்கழக வினாத்தாள் அல்ல.",
+      skippedLbl:"தவிர்த்தது", good:"மிக நன்று", okay:"நல்ல முயற்சி", more:"இன்னும் பயிற்சி தேவை", shareHead:"தமிழ்-1 பயிற்சி",
+      sendH:"என் மதிப்பெண்ணை ஆசிரியருக்கு அனுப்பு (விருப்பம்)", sendNote:"உங்கள் பெயரும் இந்த மதிப்பெண்ணும் மட்டுமே, நீங்கள் அனுப்பு அழுத்தும்போது மட்டுமே அனுப்பப்படும்.", sendBtn:"அனுப்பு", sendNeed:"முதலில் பெயரை எழுதுங்கள்.", sentOk:"அனுப்பப்பட்டது ✓", sendFail:"அனுப்ப முடியவில்லை. இணைய இணைப்பைப் பார்த்து மீண்டும் முயலுக.", sending:"அனுப்புகிறது…",
+      privacy2:"உங்கள் மதிப்பெண் தானாகப் பதிவாகாது; நீங்கள் அனுப்பு அழுத்தினால் மட்டுமே ஆசிரியருக்குச் செல்லும்.",
+      codeTitle:"வகுப்புக் குறியீடு", codeAsk:"தொடங்க, வகுப்புக் குழுவில் தரப்பட்ட குறியீட்டை உள்ளிடுக.", codePh:"குறியீடு", codeBtn:"உள்ளே செல்", codeBad:"குறியீடு சரியில்லை. மீண்டும் முயலுக.",
+      attemptsLeft:function(l,m){return "மீதமுள்ள முயற்சிகள்: "+l+" / "+m}, noAttempts:"இந்தச் சாதனத்தில் முயற்சிகள் முடிந்துவிட்டன.", expiredMsg:"இந்தப் பயிற்சி மூடப்பட்டுவிட்டது. புதிய கோப்பை அனுப்பும்படி கேளுங்கள்.",
+      shuffleNote:"ஒவ்வொரு முறையும் விடைகளின் வரிசை மாறும். எழுத்தை அல்ல, விடையைப் படித்துத் தேர்ந்தெடுக்கவும்.", privacy:"இந்தப் பக்கம் உங்கள் மதிப்பெண்ணைப் பதிவு செய்யாது. பகிர்வது உங்கள் விருப்பம்.", letters:["அ","ஆ","இ","ஈ"] },
+    en:{ credit:"Created by S. Dayalamurthy · Music Theory – 1 ·", valid:"Valid until 31 Dec 2026", lang:"English", title:"Theory-1 Practice Quiz", sub:"Part A · 101 questions",
+      intro:"Tap an answer and you see at once whether it is right, and your running score.",
+      units:"Which part?", all:"All", order:"Order", seq:"In order", shuf:"Shuffled", name:"Your name (optional)", namePh:"Name",
+      start:"Start", count:function(n){return n+" questions"}, last:"Last time", q:"Question", of:"of", right:"Right", wrong:"Wrong", score:"Score", skipped:"Skipped",
+      correct:"Correct! 1 mark.", incorrect:"Not quite. The right answer:", rightTag:"Right answer", yoursTag:"Your choice", skip:"Skip", next:"Next →", finish:"See result",
+      flagged:"Textbooks word this one differently. Check it against your class notes.",
+      result:"Your score", byUnit:"By part", retry:"Redo the ones I missed", again:"Start again", share:"Share on WhatsApp", copy:"Copy", copied:"Copied",
+      reviewH:"Missed and skipped", none:"Every answer correct. Well done!", home:"Home", notice:"Practice material for self-study. Not a university question paper.",
+      skippedLbl:"Skipped", good:"Excellent", okay:"Good effort", more:"Needs more practice", shareHead:"Theory-1 practice",
+      sendH:"Send my score to the teacher (optional)", sendNote:"Only your name and this score are sent, and only when you press Send.", sendBtn:"Send", sendNeed:"Please write your name first.", sentOk:"Sent ✓", sendFail:"Could not send. Check your internet and try again.", sending:"Sending…",
+      privacy2:"Your score is not recorded automatically; it goes to the teacher only if you press Send.",
+      codeTitle:"Class code", codeAsk:"To start, enter the code given in the class group.", codePh:"Code", codeBtn:"Enter", codeBad:"That code is not right. Please try again.",
+      attemptsLeft:function(l,m){return "Attempts left: "+l+" of "+m}, noAttempts:"You have used all attempts on this device.", expiredMsg:"This practice has closed. Ask for a new file.",
+      shuffleNote:"The answer order changes every time. Read the answer, not the letter.", privacy:"This page does not record your score. Sharing is your choice.", letters:["a","b","c","d"] }
+  };
+  L.en=L.ta; var S = { lang:"ta", units:null, order:"seq", name:"", queue:[], idx:0, ans:{}, answered:false, retry:false, runUnits:[] };
+  var root = document.getElementById("screen");
+  var FORM_ON = !!(CFG.form && CFG.form.url);
+  if(FORM_ON){ L.ta.privacy=L.ta.privacy2; L.en.privacy=L.en.privacy2 }
+
+  function store(k,v){ try{ if(v===undefined){ return localStorage.getItem(k) } localStorage.setItem(k,v) }catch(e){ return null } }
+  function t(){ return L[S.lang] }
+  function el(tag,attrs,kids){ var n=document.createElement(tag); if(attrs){ for(var k in attrs){ if(attrs[k]===null||attrs[k]===undefined) continue; if(k==="class") n.className=attrs[k]; else if(k==="text") n.textContent=attrs[k]; else if(k.slice(0,2)==="on") n.addEventListener(k.slice(2),attrs[k]); else n.setAttribute(k,attrs[k]) } } (kids||[]).forEach(function(c){ if(c) n.appendChild(typeof c==="string"?document.createTextNode(c):c) }); return n }
+  function clear(n){ while(n.firstChild) n.removeChild(n.firstChild) }
+  function unitName(i){ return BANK.units[i][S.lang] }
+  function countIn(i){ return BANK.items.filter(function(x){return x.u===i}).length }
+  function pct(a,b){ return b? Math.round(a*100/b) : 0 }
+  function shuffle(a){ for(var i=a.length-1;i>0;i--){ var j=Math.floor(Math.random()*(i+1)); var x=a[i]; a[i]=a[j]; a[j]=x } return a }
+
+  
+  var sn = store("t1ta.name"); if(sn) S.name=sn;
+  S.units = BANK.units.map(function(_,i){return i});
+
+  /* ---------- start screen ---------- */
+  function showStart(){
+    var T=t(); clear(root); window.scrollTo(0,0);
+    var langSeg = el("div",{class:"seg",role:"group","aria-label":"Language / மொழி"},["ta"].map(function(c){
+      return el("button",{type:"button","aria-pressed":S.lang===c?"true":"false",onclick:function(){ S.lang=c; store("t1ta.lang",c); showStart() }},[L[c].lang]) }));
+    var unitChips = el("div",{class:"chips"},[]);
+    var allOn = S.units.length===BANK.units.length;
+    unitChips.appendChild(el("button",{type:"button",class:"chip all","aria-pressed":allOn?"true":"false",onclick:function(){ S.units = BANK.units.map(function(_,i){return i}); showStart() }},[T.all+" ("+BANK.items.length+")"]));
+    BANK.units.forEach(function(u,i){
+      var on = S.units.indexOf(i)>=0 && !allOn;
+      unitChips.appendChild(el("button",{type:"button",class:"chip",style:"--uc:var(--u"+i+")","aria-pressed":on?"true":"false",onclick:function(){
+        var cur = allOn ? [] : S.units.slice(); var p=cur.indexOf(i); if(p>=0) cur.splice(p,1); else cur.push(i);
+        S.units = cur.length? cur : BANK.units.map(function(_,k){return k}); showStart() }},[u[S.lang]+" ("+countIn(i)+")"])); });
+    var orderSeg = el("div",{class:"seg",role:"group","aria-label":T.order},[["seq",T.seq],["shuf",T.shuf]].map(function(p){
+      return el("button",{type:"button","aria-pressed":S.order===p[0]?"true":"false",onclick:function(){ S.order=p[0]; showStart() }},[p[1]]) }));
+    var nameIn = el("input",{id:"nm",type:"text",maxlength:"40",autocomplete:"name",placeholder:T.namePh,value:S.name});
+    nameIn.addEventListener("input",function(){ S.name=nameIn.value; store("t1ta.name",S.name) });
+    var total = BANK.items.filter(function(x){return S.units.indexOf(x.u)>=0}).length;
+    var last = store("t1ta.last"); var lastEl=null;
+    if(last){ try{ var o=JSON.parse(last); lastEl = el("p",{class:"muted small"},[T.last+": "+o.c+" / "+o.n+" ("+pct(o.c,o.n)+"%)"]) }catch(e){} }
+    root.appendChild(el("div",{class:"stack"},[
+      el("div",{class:"row",style:"justify-content:space-between;align-items:center"},[ el("span",{class:"eyebrow",text:T.sub}), langSeg ]),
+      el("h1",{text:T.title}),
+      el("div",{class:"creditbox"},[ el("p",{class:"credit",text:T.credit}), el("p",{class:"credit valid",text:T.valid}) ]),
+      el("p",{class:"muted",text:T.intro}),
+      el("div",{class:"card stack"},[
+        el("div",null,[ el("h2",{text:T.units}), unitChips ]),
+        el("div",null,[ el("h2",{text:T.order}), orderSeg ]),
+        el("div",{class:"field"},[ el("label",{for:"nm",class:"small muted",text:T.name}), nameIn ]),
+        el("button",{type:"button",class:"btn primary block",id:"go",disabled:(left()<=0)?"":null,onclick:function(){ begin(false) }},[T.start+" · "+T.count(total)]),
+        CFG.maxAttempts ? el("p",{class:"small "+(left()<=0?"t-bad":"muted"),role:"status",text:left()<=0? T.noAttempts : T.attemptsLeft(left(),CFG.maxAttempts)}) : null,
+        lastEl
+      ]),
+      el("p",{class:"muted small",text:T.shuffleNote}),
+      el("p",{class:"foot",text:T.notice+" "+T.privacy})
+    ]));
+  }
+  function used(){ var n=parseInt(store("t1ta.att")||"0",10); return isNaN(n)?0:n }
+  function left(){ return CFG.maxAttempts ? Math.max(0,CFG.maxAttempts-used()) : Infinity }
+  function isExpired(){ if(!CFG.expires) return false; var d=new Date(CFG.expires+"T23:59:59"); return !isNaN(d) && new Date()>d }
+  function showClosed(){ var T=t(); clear(root); root.appendChild(el("div",{class:"stack"},[ el("h1",{text:T.title}), el("div",{class:"card"},[ el("p",{class:"feedback no",role:"status",text:T.expiredMsg}) ]) ])) }
+  function showGate(){
+    var T=t(); clear(root);
+    var inp = el("input",{id:"code",type:"text",autocomplete:"off",autocapitalize:"none",spellcheck:"false",placeholder:T.codePh});
+    var msg = el("p",{class:"t-bad",role:"alert"});
+    function submit(){ var v=(inp.value||"").trim().toLowerCase(); if(h53(v)===CFG.codeHash){ store("t1ta.ok","1"); showStart() } else { msg.textContent=T.codeBad; inp.focus() } }
+    inp.addEventListener("keydown",function(e){ if(e.key==="Enter"){ e.preventDefault(); submit() } });
+    var langSeg = el("div",{class:"seg",role:"group","aria-label":"Language / மொழி"},["ta"].map(function(c){
+      return el("button",{type:"button","aria-pressed":S.lang===c?"true":"false",onclick:function(){ S.lang=c; store("t1ta.lang",c); showGate() }},[L[c].lang]) }));
+    root.appendChild(el("div",{class:"stack"},[
+      el("div",{class:"row",style:"justify-content:space-between;align-items:center"},[ el("span",{class:"eyebrow",text:T.sub}), langSeg ]),
+      el("h1",{text:T.title}),
+      el("div",{class:"creditbox"},[ el("p",{class:"credit",text:T.credit}), el("p",{class:"credit valid",text:T.valid}) ]),
+      el("div",{class:"card stack"},[ el("div",{class:"field"},[ el("label",{for:"code",class:"small muted",text:T.codeAsk}), inp ]), msg,
+        el("button",{type:"button",class:"btn primary block",onclick:submit},[T.codeBtn]) ]),
+      el("p",{class:"foot",text:T.notice})
+    ]));
+  }
+
+  /* ---------- run control ---------- */
+  /* Same random order of the four options in both languages, so Tamil and English stay in step. */
+  function mixOptions(x){ var p=shuffle([0,1,2,3]); return { n:x.n, u:x.u, a:p.indexOf(x.a),
+    ta:{ q:x.ta.q, o:p.map(function(i){return x.ta.o[i]}) }, en:{ q:x.en.q, o:p.map(function(i){return x.en.o[i]}) } } }
+  function begin(retry){
+    var items;
+    if(isExpired()){ showClosed(); return }
+    if(!retry && CFG.maxAttempts){ if(left()<=0){ showStart(); return } store("t1ta.att",String(used()+1)) }
+    if(retry){ items = S.queue.filter(function(x){ var a=S.ans[x.n]; return !a || !a.ok }) }
+    else { items = BANK.items.filter(function(x){ return S.units.indexOf(x.u)>=0 }) }
+    if(S.order==="shuf") items = shuffle(items.slice()); else items = items.slice();
+    items = items.map(mixOptions);
+    S.queue=items; S.idx=0; S.ans={}; S.answered=false; S.retry=!!retry;
+    showQuestion();
+  }
+  function tallies(){ var r=0,w=0,sk=0,i; for(i=0;i<S.queue.length;i++){ var a=S.ans[S.queue[i].n]; if(!a) continue; if(a.skip) sk++; else if(a.ok) r++; else w++ } return {r:r,w:w,sk:sk,done:r+w+sk} }
+
+  /* ---------- question screen ---------- */
+  function showQuestion(){
+    var T=t(), q=S.queue[S.idx], tl=tallies(); S.answered=false; clear(root);
+    var attempted = tl.r+tl.w;
+    var bar = el("div",{class:"topbar"},[
+      el("div",{class:"row",style:"justify-content:space-between;align-items:baseline"},[
+        el("span",{class:"num"},[T.q+" "+(S.idx+1)+" "+T.of+" "+S.queue.length]),
+        el("button",{type:"button",class:"btn",style:"min-height:36px;padding:4px 12px",onclick:function(){ showStart() }},[T.home]) ]),
+      el("div",{class:"progress",role:"progressbar","aria-valuemin":"0","aria-valuemax":String(S.queue.length),"aria-valuenow":String(tl.done)},[ el("div",{style:"width:"+(100-pct(tl.done,S.queue.length))+"%"}) ]),
+      el("div",{class:"tally",id:"tally"},[
+        el("span",{class:"t-good"},["✓ "+T.right+" ",el("b",{text:String(tl.r)})]),
+        el("span",{class:"t-bad"},["✗ "+T.wrong+" ",el("b",{text:String(tl.w)})]),
+        tl.sk? el("span",{class:"muted"},[T.skipped+" ",el("b",{text:String(tl.sk)})]) : null,
+        el("span",{class:"score-big num"},[T.score+" "+tl.r+" / "+attempted])
+      ])
+    ]);
+    var d = q[S.lang];
+    var opts = el("div",{class:"opts",role:"group","aria-labelledby":"qt"},d.o.map(function(txt,i){
+      return el("button",{type:"button",class:"opt","data-i":String(i),onclick:function(){ choose(i) }},[
+        el("span",{class:"lt",text:T.letters[i],"aria-hidden":"true"}), el("span",{class:"tx",text:txt}), el("span",{class:"st"}) ]) }));
+    var fb = el("div",{id:"fb","aria-live":"polite"});
+    var nextBtn = el("button",{type:"button",class:"btn primary",id:"nx",disabled:"",onclick:next},[ (S.idx===S.queue.length-1)? T.finish : T.next ]);
+    var skipBtn = el("button",{type:"button",class:"btn",id:"sk",onclick:skip},[T.skip]);
+    root.appendChild(el("div",{class:"stack"},[ bar,
+      el("div",{class:"card q",style:"--uc:var(--u"+q.u+")"},[
+        el("div",{class:"qmeta"},[ el("span",{class:"tag num",text:"#"+q.n}), el("span",{class:"tag",text:unitName(q.u)}) ]),
+        el("h2",{id:"qt",class:"qtext",tabindex:"-1",text:d.q}), opts, fb
+      ]),
+      el("div",{class:"actions dock"},[ nextBtn, skipBtn ])
+    ]));
+    document.getElementById("qt").focus({preventScroll:true}); window.scrollTo(0,0);
+  }
+  function choose(i){
+    if(S.answered) return; S.answered=true;
+    var T=t(), q=S.queue[S.idx], ok = (i===q.a);
+    S.ans[q.n]={ chosen:i, ok:ok };
+    var btns = document.querySelectorAll(".opt");
+    Array.prototype.forEach.call(btns,function(b,k){
+      b.disabled=true; var st=b.querySelector(".st");
+      if(k===q.a){ b.classList.add("right"); st.textContent="✓ "+T.rightTag }
+      else if(k===i){ b.classList.add("wrong"); st.textContent="✗ "+T.yoursTag }
+      else b.classList.add("faded");
+    });
+    var fb=document.getElementById("fb"); clear(fb);
+    var msg = ok? T.correct : (T.incorrect+" ("+T.letters[q.a]+") "+q[S.lang].o[q.a]);
+    fb.appendChild(el("div",{class:"feedback "+(ok?"ok":"no"),role:"status",text:(ok?"✓ ":"✗ ")+msg}));
+    if(FLAGGED[q.n]) fb.appendChild(el("div",{class:"note",text:"ⓘ "+T.flagged}));
+    document.getElementById("sk").hidden=true;
+    var nx=document.getElementById("nx"); nx.disabled=false; nx.focus();
+    refreshBar();
+  }
+  function skip(){
+    if(S.answered) return; var q=S.queue[S.idx]; S.ans[q.n]={ skip:true, ok:false }; S.answered=true; next();
+  }
+  function refreshBar(){
+    var T=t(), tl=tallies(), attempted=tl.r+tl.w, tally=document.getElementById("tally"); if(!tally) return; clear(tally);
+    tally.appendChild(el("span",{class:"t-good"},["✓ "+T.right+" ",el("b",{text:String(tl.r)})]));
+    tally.appendChild(el("span",{class:"t-bad"},["✗ "+T.wrong+" ",el("b",{text:String(tl.w)})]));
+    if(tl.sk) tally.appendChild(el("span",{class:"muted"},[T.skipped+" ",el("b",{text:String(tl.sk)})]));
+    tally.appendChild(el("span",{class:"score-big num"},[T.score+" "+tl.r+" / "+attempted]));
+    var pr=document.querySelector(".progress"); if(pr){ pr.setAttribute("aria-valuenow",String(tl.done)); pr.firstChild.style.width=(100-pct(tl.done,S.queue.length))+"%" }
+  }
+  function next(){
+    if(!S.answered) return;
+    if(S.idx<S.queue.length-1){ S.idx++; showQuestion() } else showResult();
+  }
+
+  /* ---------- optional: send name + score to the teacher's Google Form (opt-in, one press) ---------- */
+  function sendCard(c, n, p, part){
+    var T=t(), sent=false;
+    var nm = el("input",{type:"text",maxlength:"40",autocomplete:"name",placeholder:T.namePh,value:S.name,"aria-label":T.name});
+    var msg = el("p",{class:"small",role:"status"});
+    var btn = el("button",{type:"button",class:"btn primary block"},[T.sendBtn]);
+    btn.addEventListener("click",function(){
+      var who=(nm.value||"").trim(); if(sent) return;
+      if(!who){ msg.className="small t-bad"; msg.textContent=T.sendNeed; nm.focus(); return }
+      S.name=who; store("t1ta.name",who);
+      var f=CFG.form, body=new URLSearchParams(); body.append(f.fName,who); body.append(f.fScore,c+" / "+n+" ("+p+"%)"); body.append(f.fPart,(S.retry?"[redo] ":"")+part);
+      btn.disabled=true; btn.textContent=T.sending; msg.className="small muted"; msg.textContent="";
+      fetch(f.url,{method:"POST",mode:"no-cors",headers:{"Content-Type":"application/x-www-form-urlencoded"},body:body.toString()})
+        .then(function(){ sent=true; btn.textContent=T.sentOk; msg.textContent="" },
+              function(){ btn.disabled=false; btn.textContent=T.sendBtn; msg.className="small t-bad"; msg.textContent=T.sendFail });
+    });
+    return el("div",{class:"card stack",id:"sendcard"},[ el("h2",{text:T.sendH}), el("p",{class:"muted small",text:T.sendNote}), nm, btn, msg ]);
+  }
+
+  /* ---------- result screen ---------- */
+  function showResult(){
+    var T=t(), tl=tallies(), n=S.queue.length; clear(root); window.scrollTo(0,0);
+    var pc=pct(tl.r,n);
+    if(!S.retry){ store("t1ta.last",JSON.stringify({c:tl.r,n:n})) }
+    var verdict = pc>=75? T.good : (pc>=50? T.okay : T.more);
+    var byUnit={}; S.queue.forEach(function(x){ var o=byUnit[x.u]||(byUnit[x.u]={c:0,n:0}); o.n++; var a=S.ans[x.n]; if(a&&a.ok) o.c++ });
+    var rows = el("div",null,[]);
+    Object.keys(byUnit).sort(function(a,b){return a-b}).forEach(function(u){ var o=byUnit[u];
+      rows.appendChild(el("div",{class:"unitrow",style:"--uc:var(--u"+u+")"},[ el("span",{text:unitName(+u)}), el("span",{class:"num",text:o.c+" / "+o.n}), el("div",{class:"bar"},[el("div",{style:"width:"+pct(o.c,o.n)+"%"})]) ])) });
+    var missed = S.queue.filter(function(x){ var a=S.ans[x.n]; return !a || !a.ok });
+    var list = null;
+    if(missed.length){
+      list = el("ul",{class:"review"},missed.map(function(x){ var a=S.ans[x.n], d=x[S.lang];
+        var yours = (a && !a.skip)? el("div",{class:"yours"},["✗ "+T.yoursTag+": ("+T.letters[a.chosen]+") "+d.o[a.chosen]]) : el("div",{class:"muted"},[T.skippedLbl]);
+        return el("li",null,[ el("div",{class:"q"},["#"+x.n+"  "+d.q]), yours, el("div",{class:"right"},["✓ "+T.rightTag+": ("+T.letters[x.a]+") "+d.o[x.a]]) ]) }));
+    }
+    var text = T.shareHead+": "+(S.name? S.name+" — ":"")+tl.r+"/"+n+" ("+pc+"%)";
+    var wa = "https://wa.me/?text="+encodeURIComponent(text);
+    var copyBtn = el("button",{type:"button",class:"btn",onclick:function(){
+      var done=function(){ copyBtn.textContent=T.copied; setTimeout(function(){ copyBtn.textContent=T.copy },1800) };
+      try{ navigator.clipboard.writeText(text).then(done,function(){ sel() }) }catch(e){ sel() }
+      function sel(){ var r=document.createRange(); r.selectNodeContents(shareTxt); var s=window.getSelection(); s.removeAllRanges(); s.addRange(r) }
+    }},[T.copy]);
+    var shareTxt = el("p",{class:"muted small",text:text});
+    var actions = el("div",{class:"actions"},[
+      missed.length? el("button",{type:"button",class:"btn primary",onclick:function(){ begin(true) }},[T.retry+" ("+missed.length+")"]) : null,
+      el("button",{type:"button",class:missed.length?"btn":"btn primary",onclick:function(){ begin(false) }},[T.again]),
+      el("button",{type:"button",class:"btn",onclick:showStart},[T.home]) ]);
+    root.appendChild(el("div",{class:"stack"},[
+      el("div",{class:"card resultcard"},[
+        el("div",{class:"eyebrow",text:T.result}),
+        el("div",{class:"ring",style:"--p:"+pc},[ el("div",null,[ el("div",{class:"big",id:"final",tabindex:"-1"},[tl.r+" / "+n]) ]) ]),
+        el("p",{class:"num",style:"font-size:1.2rem;font-weight:600"},[pc+"% · "+verdict]),
+        tl.sk? el("p",{class:"muted small"},[T.skipped+": "+tl.sk]) : null,
+        actions ]),
+      FORM_ON ? sendCard(tl.r, n, pc, Object.keys(byUnit).map(function(u){return unitName(+u)}).join("; ")) : null,
+      el("div",{class:"card"},[ el("h2",{text:T.share}), shareTxt,
+        el("div",{class:"row",style:"margin-top:10px"},[ el("a",{class:"btn primary",href:wa,target:"_blank",rel:"noopener",style:"text-decoration:none;display:inline-flex;align-items:center"},[T.share]), copyBtn ]) ]),
+      el("div",{class:"card"},[ el("h2",{text:T.byUnit}), rows ]),
+      el("div",null,[ el("h2",{text:T.reviewH}), list || el("p",{class:"feedback ok",text:"✓ "+T.none}) ]),
+      el("p",{class:"foot",text:T.notice})
+    ]));
+    document.getElementById("final").focus({preventScroll:true});
+  }
+
+  document.addEventListener("keydown",function(e){
+    if(!document.getElementById("qt")) return;
+    if(e.target && e.target.tagName==="INPUT") return;
+    var k=e.key;
+    if(!S.answered && k>="1" && k<="4"){ choose(+k-1); e.preventDefault(); return }
+    if(!S.answered){ var m={a:0,b:1,c:2,d:3}[String(k).toLowerCase()]; if(m!==undefined){ choose(m); e.preventDefault(); return } }
+    if(S.answered && (k==="ArrowRight")){ next(); e.preventDefault() }
+  });
+  if(isExpired()) showClosed(); else if(store("t1ta.ok")==="1") showStart(); else showGate();
+})();
+</script>
+<script>
+/* Vijayadashami greeting: shown only on 20 Oct 2026 (the phone's local date). Tap or wait to continue. */
+(function(){
+  var d=new Date(); var fest=(d.getFullYear()===2026&&d.getMonth()===9&&(d.getDate()===19||d.getDate()===20));
+  var st=document.createElement("style");
+  st.textContent="#splash{position:fixed;inset:0;z-index:99;display:flex;flex-direction:column;align-items:center;justify-content:safe center;overflow-y:auto;gap:14px;padding:24px 20px;text-align:center;background:radial-gradient(circle at 50% 38%,#8a1b38,#4a0c1d 70%);color:#fbe9c0;cursor:pointer;transition:opacity .6s}#splash.out{opacity:0}#splash .om{font-size:4rem;line-height:1;color:#f3c75b;text-shadow:0 3px 0 rgba(0,0,0,.5)}#splash h2{margin:0;font:800 clamp(1.5rem,7vw,2.2rem)/1.3 'Baloo Thambi 2','Noto Serif Tamil',serif;color:#f3c75b;text-shadow:0 2px 0 rgba(0,0,0,.5);text-wrap:balance}#splash p{margin:0;font:600 1.1rem/1.5 'Noto Sans Tamil',sans-serif}#splash small{opacity:.8}#splash .codechip{display:flex;flex-direction:column;gap:6px;align-items:center;max-width:100%}#splash .codechip b{display:inline-block;padding:6px 14px;border-radius:10px;background:linear-gradient(#ffe08a,#f3c75b);color:#3a0814;font:800 .92rem/1.35 'Noto Sans Tamil',sans-serif;box-shadow:0 2px 0 rgba(0,0,0,.35),0 0 14px rgba(243,199,91,.55);text-wrap:balance}#splash hr.sep{width:60%;max-width:220px;border:0;border-top:1px solid rgba(243,199,91,.55);margin:2px 0}#splash button{margin-top:4px;min-height:50px;padding:10px 30px;font:800 1.05rem 'Noto Sans Tamil',sans-serif;color:#4a0c1d;background:linear-gradient(#ffe08a,#e0a82e);border:2px solid #fff3c4;border-radius:999px;box-shadow:inset 0 2px 0 rgba(255,255,255,.7),0 5px 0 #8a5a10,0 10px 16px -6px rgba(0,0,0,.6);cursor:pointer}#splash button:active{transform:translateY(3px);box-shadow:inset 0 2px 0 rgba(255,255,255,.7),0 2px 0 #8a5a10}#splash .msg{max-width:30ch;font-weight:400;font-size:.98rem;color:#fbe9c0}#splash .msg b{color:#f3c75b}#splash>*:not(.star){position:relative;z-index:1}#splash .star{position:absolute;top:-6%;color:#f3c75b;text-shadow:0 0 8px rgba(243,199,91,.9);pointer-events:none;opacity:0;animation:sfall linear infinite,stw 1.4s ease-in-out infinite}@keyframes sfall{0%{transform:translateY(0) rotate(0)}100%{transform:translateY(112vh) rotate(200deg)}}@keyframes stw{0%,100%{opacity:.25}50%{opacity:1}}@media (prefers-reduced-motion:reduce){#splash .star{animation:stw 2s ease-in-out infinite;top:auto}}";
+  document.head.appendChild(st);
+  var s=document.createElement("div"); s.id="splash"; s.setAttribute("role","dialog"); s.setAttribute("aria-label","Vijayadashami greeting");
+  s.innerHTML='<div class="om" aria-hidden="true">&#10048;</div>'+(fest?'<h2>Wishing you the very happy Vijaydashami</h2><p>அனைவருக்கும் விஜயதசமி நல்வாழ்த்துகள்!</p><p class="msg">May knowledge and music flourish in every life.</p><hr class="sep"><p class="msg"><b>For our first-year students</b><br>On this auspicious day, we bring this practice companion for the benefit of all our knowledge.<br><b>What one of us learns lights the way for all.</b></p><p class="msg"><b>முதலாம் ஆண்டு மாணவர்களுக்காக</b><br>இந்த நன்னாளில், நம் அனைவரின் அறிவுப் பயனுக்காக இந்தப் பயிற்சிக் கருவி.</p>':'<h2>தமிழ்-1 பயிற்சி வினா-விடை</h2><p>அலகு 1–3 · 42 வினாக்கள்</p>')+'<small>தயாளமூர்த்தி</small><div class="codechip"><b>Use code: swaram · குறியீடு: swaram</b><b>Valid until 31 Dec 2026<br>31 டிசம்பர் 2026 வரை செல்லும்</b></div><button type="button" id="splashgo">Continue · தொடர்க</button>';
+  for(var i=0;i<30;i++){ var z=document.createElement("span"); z.className="star"; z.setAttribute("aria-hidden","true"); z.textContent=(i%3?"✦":"★");
+    z.style.left=(Math.random()*100)+"%"; z.style.fontSize=(10+Math.random()*16)+"px";
+    z.style.animationDuration=(4+Math.random()*5)+"s,"+(1+Math.random()*1.5)+"s"; z.style.animationDelay="-"+(Math.random()*8)+"s,-"+(Math.random()*2)+"s"; s.appendChild(z) }
+  function close(){ if(!s.parentNode) return; s.classList.add("out"); setTimeout(function(){ if(s.parentNode) s.parentNode.removeChild(s) },650) }
+  document.body.appendChild(s); var go=s.querySelector("#splashgo"); go.addEventListener("click",close); go.focus();
+})();
+</script>
+</body></html>
